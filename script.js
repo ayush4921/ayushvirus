@@ -1,6 +1,3 @@
-///Last modified 02/06/2016
-//Sathish kumar
-//Added theming
 
 $(function () {
 	var world;
