@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5459499c3a044fe2bd34488a9b54931c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5459499c3a044fe2bd34488a9b54931c" ></div>
+        
+</body>
+<script>    
+    
+            var map_5459499c3a044fe2bd34488a9b54931c = L.map(
+                "map_5459499c3a044fe2bd34488a9b54931c",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b893eb6935cc4e36bddffa318fe2139a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5459499c3a044fe2bd34488a9b54931c);
+        
+    
+            var marker_cluster_d4fde76d7646460cb451402499d3cbf0 = L.markerClusterGroup(
+                {}
+            );
+            map_5459499c3a044fe2bd34488a9b54931c.addLayer(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+            var circle_marker_ebd461e63999439da8c328b56f4db9d0 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_587b3e3d185c4c1899642f26eb6264fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c050c0bdb6a41998be7e90963bbceee = $(`<div id="html_1c050c0bdb6a41998be7e90963bbceee" style="width: 100.0%; height: 100.0%;">Country : Italy<br>                     Drugs: 16<br></div>`)[0];
+            popup_587b3e3d185c4c1899642f26eb6264fe.setContent(html_1c050c0bdb6a41998be7e90963bbceee);
+        
+
+        circle_marker_ebd461e63999439da8c328b56f4db9d0.bindPopup(popup_587b3e3d185c4c1899642f26eb6264fe)
+        ;
+
+        
+    
+    
+            var circle_marker_c5285cf82dde42a6b793e5705bf3c6c3 = L.circleMarker(
+                [-10.3333333, -53.2],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_3f4ad50a482b4997a504c86a854fe5c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7bf8d77fa0c478c8eba34f469e02284 = $(`<div id="html_f7bf8d77fa0c478c8eba34f469e02284" style="width: 100.0%; height: 100.0%;">Country : Brazil<br>                     Drugs: 6<br></div>`)[0];
+            popup_3f4ad50a482b4997a504c86a854fe5c0.setContent(html_f7bf8d77fa0c478c8eba34f469e02284);
+        
+
+        circle_marker_c5285cf82dde42a6b793e5705bf3c6c3.bindPopup(popup_3f4ad50a482b4997a504c86a854fe5c0)
+        ;
+
+        
+    
+    
+            var circle_marker_4cd1b6b6082d4cdcad1d1694be22e375 = L.circleMarker(
+                [22.3511148, 78.6677428],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_11e39b18114b494f831b4c822061aabf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec9d371a7ea45ebad3f5b602db4e1af = $(`<div id="html_eec9d371a7ea45ebad3f5b602db4e1af" style="width: 100.0%; height: 100.0%;">Country : India<br>                     Drugs: 10<br></div>`)[0];
+            popup_11e39b18114b494f831b4c822061aabf.setContent(html_eec9d371a7ea45ebad3f5b602db4e1af);
+        
+
+        circle_marker_4cd1b6b6082d4cdcad1d1694be22e375.bindPopup(popup_11e39b18114b494f831b4c822061aabf)
+        ;
+
+        
+    
+    
+            var circle_marker_9129390c831c4d2ca409d922b2d97e38 = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_11ced179c5d547859f8dae55ca7ef2b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04375dd13d864cb1bfa9b25d8f939817 = $(`<div id="html_04375dd13d864cb1bfa9b25d8f939817" style="width: 100.0%; height: 100.0%;">Country : France<br>                     Drugs: 10<br></div>`)[0];
+            popup_11ced179c5d547859f8dae55ca7ef2b9.setContent(html_04375dd13d864cb1bfa9b25d8f939817);
+        
+
+        circle_marker_9129390c831c4d2ca409d922b2d97e38.bindPopup(popup_11ced179c5d547859f8dae55ca7ef2b9)
+        ;
+
+        
+    
+    
+            var circle_marker_9822838552634b79b82d4a4331d52c7e = L.circleMarker(
+                [36.5748441, 139.2394179],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_b18c840faf874554aa7e49363318cb9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fea33d75f03243b680279c3ad973faea = $(`<div id="html_fea33d75f03243b680279c3ad973faea" style="width: 100.0%; height: 100.0%;">Country : Japan<br>                     Drugs: 14<br></div>`)[0];
+            popup_b18c840faf874554aa7e49363318cb9e.setContent(html_fea33d75f03243b680279c3ad973faea);
+        
+
+        circle_marker_9822838552634b79b82d4a4331d52c7e.bindPopup(popup_b18c840faf874554aa7e49363318cb9e)
+        ;
+
+        
+    
+    
+            var circle_marker_e56f96aced6743c7bb01693e30a953ec = L.circleMarker(
+                [1.2904753, 103.8520359],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_76c274fdbdb2401dab17165e0b0009b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d39a33ca36414b9aa051d4122e6746b7 = $(`<div id="html_d39a33ca36414b9aa051d4122e6746b7" style="width: 100.0%; height: 100.0%;">Country : Singapore<br>                     Drugs: 12<br></div>`)[0];
+            popup_76c274fdbdb2401dab17165e0b0009b7.setContent(html_d39a33ca36414b9aa051d4122e6746b7);
+        
+
+        circle_marker_e56f96aced6743c7bb01693e30a953ec.bindPopup(popup_76c274fdbdb2401dab17165e0b0009b7)
+        ;
+
+        
+    
+    
+            var circle_marker_cc751a62329346adbe4fa9ae3cf60e54 = L.circleMarker(
+                [23.9739374, 120.9820179],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_8ffbcaad78bb448989398ca9f5bd28c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80ecfbc05aa94d89bdcf1eddf986e27b = $(`<div id="html_80ecfbc05aa94d89bdcf1eddf986e27b" style="width: 100.0%; height: 100.0%;">Country : Taiwan<br>                     Drugs: 10<br></div>`)[0];
+            popup_8ffbcaad78bb448989398ca9f5bd28c8.setContent(html_80ecfbc05aa94d89bdcf1eddf986e27b);
+        
+
+        circle_marker_cc751a62329346adbe4fa9ae3cf60e54.bindPopup(popup_8ffbcaad78bb448989398ca9f5bd28c8)
+        ;
+
+        
+    
+    
+            var circle_marker_86dbceb399d44030a40cc539e11ea18a = L.circleMarker(
+                [36.638392, 127.6961188],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_d81a8f78855f49f09e7c4cfc86de5904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29fb1d5972a645bda3c5033fdf41565c = $(`<div id="html_29fb1d5972a645bda3c5033fdf41565c" style="width: 100.0%; height: 100.0%;">Country : South Korea<br>                     Drugs: 9<br></div>`)[0];
+            popup_d81a8f78855f49f09e7c4cfc86de5904.setContent(html_29fb1d5972a645bda3c5033fdf41565c);
+        
+
+        circle_marker_86dbceb399d44030a40cc539e11ea18a.bindPopup(popup_d81a8f78855f49f09e7c4cfc86de5904)
+        ;
+
+        
+    
+    
+            var circle_marker_a0edbce609264b7eab3bdfe61ffaf7a5 = L.circleMarker(
+                [51.0834196, 10.4234469],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_e37829c0f7604f65b2acae490392c3ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7ed6fddd5b64c73867f907c51e0a4b3 = $(`<div id="html_a7ed6fddd5b64c73867f907c51e0a4b3" style="width: 100.0%; height: 100.0%;">Country : Germany<br>                     Drugs: 7<br></div>`)[0];
+            popup_e37829c0f7604f65b2acae490392c3ea.setContent(html_a7ed6fddd5b64c73867f907c51e0a4b3);
+        
+
+        circle_marker_a0edbce609264b7eab3bdfe61ffaf7a5.bindPopup(popup_e37829c0f7604f65b2acae490392c3ea)
+        ;
+
+        
+    
+    
+            var circle_marker_76810930c757443ba07bbf83e3de7203 = L.circleMarker(
+                [-24.7761086, 134.755],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_76d0f383f8bf4fecab96bc6d24e355c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a44fee94e7744f71bb568cc138238629 = $(`<div id="html_a44fee94e7744f71bb568cc138238629" style="width: 100.0%; height: 100.0%;">Country : Australia<br>                     Drugs: 6<br></div>`)[0];
+            popup_76d0f383f8bf4fecab96bc6d24e355c7.setContent(html_a44fee94e7744f71bb568cc138238629);
+        
+
+        circle_marker_76810930c757443ba07bbf83e3de7203.bindPopup(popup_76d0f383f8bf4fecab96bc6d24e355c7)
+        ;
+
+        
+    
+    
+            var circle_marker_a6b3fec85eb94d15b4d4ca8a6025a182 = L.circleMarker(
+                [39.3262345, -4.8380649],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_8c9b1d427c7f43c9b3a926a21165801f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_034ca52c80fb4d73ac1769c2b7348718 = $(`<div id="html_034ca52c80fb4d73ac1769c2b7348718" style="width: 100.0%; height: 100.0%;">Country : Spain<br>                     Drugs: 7<br></div>`)[0];
+            popup_8c9b1d427c7f43c9b3a926a21165801f.setContent(html_034ca52c80fb4d73ac1769c2b7348718);
+        
+
+        circle_marker_a6b3fec85eb94d15b4d4ca8a6025a182.bindPopup(popup_8c9b1d427c7f43c9b3a926a21165801f)
+        ;
+
+        
+    
+    
+            var circle_marker_20caecbbc95749b9b0a86dc468da292c = L.circleMarker(
+                [25.6242618, 42.3528328],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_f16417cbad2c44edb61db1bfa1b5b229 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be9b40be6dd64a87a527c480247e080f = $(`<div id="html_be9b40be6dd64a87a527c480247e080f" style="width: 100.0%; height: 100.0%;">Country : Saudi Arabia<br>                     Drugs: 16<br></div>`)[0];
+            popup_f16417cbad2c44edb61db1bfa1b5b229.setContent(html_be9b40be6dd64a87a527c480247e080f);
+        
+
+        circle_marker_20caecbbc95749b9b0a86dc468da292c.bindPopup(popup_f16417cbad2c44edb61db1bfa1b5b229)
+        ;
+
+        
+    
+    
+            var circle_marker_9d717f75f15e46e398bf4da35eb942ea = L.circleMarker(
+                [35.000074, 104.999927],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_1ba09223315f4e748a3df52f813773a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23772f2147d64bfda827e6a2012e4f39 = $(`<div id="html_23772f2147d64bfda827e6a2012e4f39" style="width: 100.0%; height: 100.0%;">Country : China<br>                     Drugs: 49<br></div>`)[0];
+            popup_1ba09223315f4e748a3df52f813773a9.setContent(html_23772f2147d64bfda827e6a2012e4f39);
+        
+
+        circle_marker_9d717f75f15e46e398bf4da35eb942ea.bindPopup(popup_1ba09223315f4e748a3df52f813773a9)
+        ;
+
+        
+    
+    
+            var circle_marker_4b333abb9ac74c28baa833e261754f23 = L.circleMarker(
+                [39.7837304, -100.4458825],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_e1752adfc41b48b798317557bcbb30e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a9e22b2fee8441690d7e2f6fbf4bef8 = $(`<div id="html_2a9e22b2fee8441690d7e2f6fbf4bef8" style="width: 100.0%; height: 100.0%;">Country : United States<br>                     Drugs: 227<br></div>`)[0];
+            popup_e1752adfc41b48b798317557bcbb30e1.setContent(html_2a9e22b2fee8441690d7e2f6fbf4bef8);
+        
+
+        circle_marker_4b333abb9ac74c28baa833e261754f23.bindPopup(popup_e1752adfc41b48b798317557bcbb30e1)
+        ;
+
+        
+    
+    
+            var circle_marker_eeb7a5aa02f44d019a6f8d7f2c9c5723 = L.circleMarker(
+                [22.2793278, 114.1628131],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d4fde76d7646460cb451402499d3cbf0);
+        
+    
+        var popup_d7960ed0e3b24781b7f08d451fe89466 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af7172943b2c44499996d5528ffc50b7 = $(`<div id="html_af7172943b2c44499996d5528ffc50b7" style="width: 100.0%; height: 100.0%;">Country : Hong Kong<br>                     Drugs: 96<br></div>`)[0];
+            popup_d7960ed0e3b24781b7f08d451fe89466.setContent(html_af7172943b2c44499996d5528ffc50b7);
+        
+
+        circle_marker_eeb7a5aa02f44d019a6f8d7f2c9c5723.bindPopup(popup_d7960ed0e3b24781b7f08d451fe89466)
+        ;
+
+        
+    
+</script>
